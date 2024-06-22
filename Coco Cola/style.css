@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+}
+
+#page{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: black;
+}
+
+nav{
+    height: 5vw;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.2vw;
+}
+
+#pt2{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+    gap: 20px;
+}
+
+#pt2>img{
+    height: 5vw;
+    width: 8.5vw;
+}
+#line{
+    background-color: red;
+    height: 2px;
+    width: 80px;
+}
+
+#pt2>h4{
+    font-weight: 500;
+}
+
+#pt1{
+    font-size: 1.2vw;
+}
+
+#pt3{
+    font-size: 1.5vw;
+}
+
+#content{
+    height: calc(100% - 5vw);
+    width: 100%;
+    display: flex;
+}
+
+#content-pt1{
+    height: 100%;
+    width: calc(100% / 3);
+    padding: 9.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8vw;
+    color: white;
+}
+#content-pt2{
+    height: 100%;
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content-pt3{
+    height: 100%;
+    width: calc(100% / 3);
+}
+
+#content-pt1>h1{
+    font-size: 3.5vw;
+    white-space: nowrap;
+}
+#content-pt1>h1>span{
+    color: red;
+    font-weight: 500;
+}
+
+#content-pt1>button{
+    height: 3vw;
+    width: 10vw;
+    font-size: 1vw;
+    border-radius: 50px;
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+}
+
+#bg-img{
+    height: 84%;
+    width: 65%;
+    border-top-right-radius: 180px;
+    border-top-left-radius: 180px;
+    margin-left: 4.5vw;
+}
+
+#bg-img>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 180px;
+    border-top-left-radius: 180px;
+}
+
+#container{
+    height: 20%;
+    width: 15%;
+    position: absolute;
+    bottom: 12%;
+    right: 12.5%;
+}
+
+#container>h2{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.532);
+    margin-top: 1vw;
+    font-weight: 500;
+    cursor: default;
+    font-size: 1.8vw;
+}
+
+#container>h2:hover{
+    color: white;
+}
+
+#content-pt1>button:hover{
+    background-color: #fff;
+    color: red;
+    border: none;
+}
